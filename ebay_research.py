@@ -22,7 +22,7 @@ def search_ebay(keyword):
     try:
         # キーワードをURLエンコード
         encoded_keyword = requests.utils.quote(keyword)
-        url = f"https://www.ebay.com/sch/i.html?_nkw={encoded_keyword}&_sacat=0&LH_ItemCondition=3000"
+        url = f"https://www.ebay.com/sch/i.html?_nkw={encoded_keyword}&_sacat=0&LH_ItemCondition=3000"  # LH_ItemCondition=3000は中古
         
         # ユーザーエージェントを設定
         headers = {
